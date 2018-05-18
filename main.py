@@ -11,9 +11,9 @@ def index():
     pic_str=""
     
     for item in pic_list:
-        pic_str+="<img src='"+pic_folder+item+"'/><br>"+os.path.basename(item)+"<br>"
+        pic_str+="<img src='"+pic_folder+item+"' align='center'/><br>"+os.path.basename(item)+"<br>"
         
-    return render_template('index.html')+pic_str
+    return render_template('Quark_index.htm')+pic_str
 
 
 
